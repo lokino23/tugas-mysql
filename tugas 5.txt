@@ -1,0 +1,5 @@
+// soal 5 mengubah database 
+
+UPDATE items 
+SET price =2500000 
+WHERE id = 1;

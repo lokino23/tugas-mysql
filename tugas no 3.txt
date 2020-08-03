@@ -1,0 +1,17 @@
+
+
+//masukkan data ke user
+INSERT INTO USERS 
+	(name, email, password) 
+	VALUES ('John Doe', 'jon@doe.com', 'john123'),('Jane Doe', 'jane@doe','jenita123');
+//masukkan data ke categories
+INSERT INTO categories
+	(name)
+	VALUES ('gadget'),('cloth'),('men'),('women'),('branded');
+
+	
+//masukkan data ke items
+INSERT INTO items 
+	(name, description, price, stock, category_id) 
+	VALUES ('Sumsang b50', 'hape keren dari merek samsung', 4000000, 100,1),('Uniklooh', 'baju keren dari brand ternama',500000, 50,2),('IMHO WATCH', 'jam tangan anak yang jujur banget',2000000,10,1);
+

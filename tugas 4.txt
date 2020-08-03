@@ -1,0 +1,21 @@
+
+//4.a ambil data from user
+SELECT NAME, email FROM users;
+
+//4.b mengambil data item tertentu
+//diatas 1.0000.000
+SELECT *
+FROM items
+WHERE price > 1000000;
+
+//nama mirip dengan sang
+SELECT *
+FROM items 
+WHERE NAME LIKE '%sang%';
+
+//4.c menampilkan data item join dengan kategori 
+
+SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.name AS kategori 
+FROM items 
+INNER JOIN categories ON items.category_id=categories.id;
+
